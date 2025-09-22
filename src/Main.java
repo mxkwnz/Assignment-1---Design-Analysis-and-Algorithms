@@ -10,11 +10,27 @@ public class Main {
 
         QuickSort.sort(arr);
 
+        System.out.println("~Deterministic Select~");
         System.out.println(k + "-th smallest element: " + result);
         System.out.println("Comparisons: " + DeterministicSelect.getComparisons());
         System.out.println("Max depth: " + DeterministicSelect.getMaxDepth());
+
+        System.out.println();
+        System.out.println("~QuickSort~");
         System.out.println(Arrays.toString(arr));
 
+        System.out.println();
+        System.out.println("~MergeSort~");
+        MergeSortExperiment.main(new String[]{});
 
+        System.out.println();
+        System.out.println("~ClosestPair~");
+        ClosestPair.Point[] pts = {
+                new ClosestPair.Point(2, 3), new ClosestPair.Point(12, 30),
+                new ClosestPair.Point(40, 50), new ClosestPair.Point(5, 1),
+                new ClosestPair.Point(12, 10), new ClosestPair.Point(3, 4)
+        };
+
+        System.out.println("Минимальное расстояние = " + ClosestPair.closest(pts));
     }
 }
