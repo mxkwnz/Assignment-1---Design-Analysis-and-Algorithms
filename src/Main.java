@@ -8,8 +8,14 @@ public class Main {
         int k = 3;
         int result = DeterministicSelect.select(arr.clone(), k);
 
+        int[] data = {30, 10, 50, 20, 70, 40, 15, 5};
+        QuickSort.sort(data);
+
         System.out.println(k + "-th smallest element: " + result);
         System.out.println("Comparisons: " + DeterministicSelect.getComparisons());
         System.out.println("Max depth: " + DeterministicSelect.getMaxDepth());
+        System.out.println(Arrays.toString(data));
+
+
     }
 }
