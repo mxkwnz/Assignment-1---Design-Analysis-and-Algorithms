@@ -11,9 +11,9 @@ public class Main {
         QuickSort.sort(arr);
 
         System.out.println("~Deterministic Select~");
-        System.out.println(k + "-th smallest element: " + result);
-        System.out.println("Comparisons: " + DeterministicSelect.getComparisons());
-        System.out.println("Max depth: " + DeterministicSelect.getMaxDepth());
+        System.out.println(k + " самый маленький элемент: " + result);
+        System.out.println("Сравнения: " + DeterministicSelect.getComparisons());
+        System.out.println("Максимальная глубина: " + DeterministicSelect.getMaxDepth());
 
         System.out.println();
         System.out.println("~QuickSort~");
