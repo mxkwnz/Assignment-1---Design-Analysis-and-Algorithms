@@ -21,7 +21,7 @@ public class Main {
 
         System.out.println();
         System.out.println("~MergeSort~");
-        MergeSortExperiment.main(new String[]{});
+        MergeSorter.main(new String[]{});
 
         System.out.println();
         System.out.println("~ClosestPair~");
